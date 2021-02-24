@@ -10,10 +10,27 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
+<script>
+    (function () {
+        if ('') {
+            if (prompt('请输入文章密码') !== '') {
+                alert('密码错误！');
+                if (history.length === 1) {
+                    location.replace("https://chenjiabing666.github.io/"); // 这里替换成你的首页
+                } else {
+                    history.back();
+                }
+            }
+        }
+    })();
+</script>
+
 <link rel="stylesheet" href="/css/main.css">
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-big-counter.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
@@ -342,12 +359,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/30/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0%E4%BA%8C/" rel="prev" title="常微分方程复习(二)">
-      <i class="fa fa-chevron-left"></i> 常微分方程复习(二)
+    <a href="/2020/06/29/%E5%8D%8A%E5%AF%BC%E4%BD%93%E4%BA%8C%E6%9E%81%E7%AE%A1/" rel="prev" title="半导体二极管">
+      <i class="fa fa-chevron-left"></i> 半导体二极管
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/07/03/%E4%BA%8C%E6%9E%81%E7%AE%A1%E7%9A%84%E7%9B%B4%E6%B5%81%E7%AD%89%E6%95%88/" rel="next" title="二极管的直流等效电路">
-      二极管的直流等效电路 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/06/30/%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E7%AC%94%E8%AE%B0%E4%BA%8C/" rel="next" title="常微分方程复习(二)">
+      常微分方程复习(二) <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -423,7 +440,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -436,7 +453,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
